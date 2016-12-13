@@ -1,0 +1,13 @@
+<form method="POST" action="/search/">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'Style.css' %}" />
+{% csrf_token %}
+<iframe src="//giphy.com/embed/1iWIRqnFyIiys" width="480" height="216" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/1iWIRqnFyIiys"></a></p>
+<input type="text" name="textfield">
+<select id="state">
+{% for y in state%}
+    <option value="{{ y }}">{{ y }}</option>
+{% endfor %}
+</select>
+<button type="submit">Hey! please enter the city you want to visit.</button>
+</form>

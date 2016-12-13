@@ -1,0 +1,10 @@
+iframe .image {
+    width: 100%;
+}
+
+iframe {
+    text-align: center;
+    display: table;
+    max-width: 80%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto; /* not needed unless you want centered */
+}
